@@ -254,7 +254,7 @@ const BANK_URL = "https://raw.githubusercontent.com/derechoelectoral2026/Bancos-
 
 // Convierte URLs normales de GitHub al formato raw automáticamente
 function toRawUrl(url) {
-  url = (url || "").trim();
+  url = (url || "https://raw.githubusercontent.com/derechoelectoral2026/Bancos-Spen/main/banco-modulo-cv2.js").trim();
   const m = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/(.+)$/i);
   if (m) return `https://raw.githubusercontent.com/${m[1]}/${m[2]}/${m[3]}`;
   return url;
